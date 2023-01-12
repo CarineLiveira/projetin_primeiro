@@ -1,0 +1,28 @@
+body {
+    background-color: #e9edf9;
+}
+
+.navbar {
+   position: absolute;
+   height: 100vh;
+   background-color: #2a2135;
+   padding: 24px;
+   color: #848294;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   transition-property: all;
+   transition-timing-function: ease-in-out;
+}
+
+.navbar:hover {
+    padding-right: 200px;
+  }
+
+  .navbar a {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
