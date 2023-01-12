@@ -12,6 +12,7 @@ body {
    display: flex;
    flex-direction: column;
    transition-property: all;
+   transition-duration: 200ms;
    transition-timing-function: ease-in-out;
 }
 
@@ -25,4 +26,40 @@ body {
     align-items: center;
     text-align: center;
     margin-bottom: 10px;
+  }
+
+.navbar a span {
+  position:absolute;
+  width: 100px;
+  left: -110px;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  text-align: left;
+}
+   
+.navbar:hover a span {
+  opacity: 1;
+  left: 0px;
+  margin-left: 50px;
+  }
+
+  .navbar a i {
+    width: 20px;
+  }
+
+  .navbar a:hover {
+    cursor: pointer;
+    color: white;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: verdana, Geneva, tahoma, sans-serif; 
   }
